@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosidades do Espaço</title>
+    <style>
+        /* Estilos básicos para deixar a página organizada */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f4f4f9;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: inline-block;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #34495e;
+        }
+        .mensagem {
+            font-size: 18px;
+            margin-top: 20px;
+            color: #555;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Título da página -->
+        <h1>Explorando o Universo 🚀</h1>
+        
+        <!-- Botão que aciona a função -->
+        <button class="botao-curiosidade">Descobrir Curiosidade</button>
+        
+        <!-- Área onde a mensagem será exibida -->
+        <p class="texto-mensagem">Clique no botão para ver um fato surpreendente sobre o espaço!</p>
+    </div>
+
+    <!-- JavaScript que faz a mágica acontecer -->
+    <script>
+        // 1. Selecionando os elementos da página através das classes CSS
+        const botao = document.querySelector(".botao-curiosidade");
+        const mensagem = document.querySelector(".texto-mensagem");
+
+        // 2. Criando a função que altera o texto da página
+        function revelarCuriosidade() {
+            mensagem.textContent = "🌌 Um dia em Vênus é mais longo do que um ano inteiro em Vênus! Ele demora mais para rodar em torno de si mesmo do que para dar uma volta ao redor do Sol.";
+            mensagem.style.color = "#8e44ad"; // Altera também a cor do texto para destacar
+        }
+
+        // 3. Ouvindo o clique do botão e executando a função
+        botao.addEventListener("click", revelarCuriosidade);
+    </script>
+
+</body>
+</html>
